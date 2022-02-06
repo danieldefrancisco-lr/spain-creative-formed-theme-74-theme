@@ -3,7 +3,7 @@
   <compatibility>
     <version>7.4.0+</version>
   </compatibility>
-  <theme id="uk-creative-formed-theme-74" name="uk-creative-formed-theme-74">
+  <theme id="spain-creative-formed-theme-74" name="spain-creative-formed-theme-74">
     <template-extension>ftl</template-extension>
     <settings>
       <setting configurable="false" key="color-palette" value="primary,success,danger,warning,info,dark,gray-dark,secondary,light,lighter,white"/>
@@ -16,7 +16,7 @@
       <setting configurable="true" key="wrap-widget-page-content" type="checkbox" value="true"/>
 	  <setting configurable="true" key="enable-sticky-header" type="checkbox" value="true" />
 	<setting configurable="true" key="show-language-selector" type="checkbox" value="true" />
-	
+
 		<setting configurable="true" key="show-account-selector" type="checkbox" value="true"/>
 		<setting configurable="true" key="show-mini-cart" type="checkbox" value="true"/>
     </settings>

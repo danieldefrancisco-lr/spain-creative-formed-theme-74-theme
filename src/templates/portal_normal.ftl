@@ -23,7 +23,7 @@
 
 <div class="d-flex flex-column min-vh-100">
 <#if show_dockbar>
-	<@liferay.control_menu />	
+	<@liferay.control_menu />
 </#if>
 	<div class="d-flex flex-column flex-fill" id="wrapper">
 		<#if show_header>
@@ -42,25 +42,25 @@
 									/>
 								</div>
 							</#if>
-							
+
 							<#assign preferences = freeMarkerPortletPreferences.getPreferences({"portletSetupPortletDecoratorId": "barebone", "destination": "/search"}) />
 
-							<div class="autofit-col flex-grow-1 flex-shrink-1">								
+							<div class="autofit-col flex-grow-1 flex-shrink-1">
 									<div class="justify-content-md-end ml-md-2 mr-2 mr-md-4 navbar-form" role="search">
 										<div class="autofit-col personal-bar-container">
-											<#if !is_signed_in>					
+											<#if !is_signed_in>
 												<a style="margin-right: 10px" class="sign-in text-default" data-redirect="${is_login_redirect_required?string}" href="javascript:void(0)" onclick="$('#loginCardContainer').css('visibility', 'visible');" id="sign-in" rel="nofollow">${sign_in_text}</a>
 											</#if>
-											
+
 											<#if is_signed_in>
-												<@liferay.user_personal_bar />	
-											</#if>											
+												<@liferay.user_personal_bar />
+											</#if>
 										</div>
 									<#if show_header_search>
 										<@liferay.search_bar default_preferences="${preferences}" />
 									</#if>
 									</div>
-							</div>													
+							</div>
 						</div>
 					</div>
 				</div>
@@ -74,7 +74,7 @@
 								<h2 class="font-weight-light h2 mb-0 mx-2 lower-header-text-color text-uppercase">${site_name}</h2>
 							</#if>
 						</a>
-						
+
 						<a class="${logo_css_class} align-items-center d-inline-flex d-md-none logo-xs mr-4" href="${site_default_url}" rel="nofollow">
 							<img alt="${logo_description}" class="mr-2 site-logo" src="${site_logo}" />
 
@@ -110,21 +110,21 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 text-center text-md-left">
-							Powered by 
+							Powered by
 
-							<a class="text-gray" href="http://www.liferay.com" rel="external">Liferay UK &copy;2020</a>
+							<a class="text-gray" href="http://www.liferay.com" rel="external">Liferay &copy;2021</a>
 						</div>
 					</div>
 				</div>
 			</footer>
 		</#if>
-		<#if !is_signed_in>	
+		<#if !is_signed_in>
 			<div id="loginCardContainer" style="background: rgba(0, 0, 0, 0.5); height: 100%; width: 100%; z-index: 1500; position: fixed; top: 0; left: 0; visibility: hidden;">
 				<div style="margin-left: 90%; margin-right: 20px; margin-top: 20px; position: relative;">
 					<a class="btn btn-primary" href="javascript:void(0)" onclick="$('#loginCardContainer').css('visibility', 'hidden');" id="hide-sign-in" rel="nofollow">X</a>
 				</div>
 				<div class="b2b-login-card card" id="loginCardArea" style="background-color: #ffffff; min-width:300px; max-width: 400px; position: fixed; top: 25%;
-					left: 50%; transform: translate(-50%, 0); z-index: 2000; padding: 20px;">	
+					left: 50%; transform: translate(-50%, 0); z-index: 2000; padding: 20px;">
 						<#assign preferences = freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone") />
 						<@liferay_portlet["runtime"]
 							defaultPreferences=preferences
